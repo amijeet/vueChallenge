@@ -1,10 +1,9 @@
-.table-custom {
-	margin: 1rem;
-	color: aliceblue;
-}
-.logo {
-	padding: 0 2rem 0 2rem;
-}
 .brand-custom {
-	padding: 3rem;
+	padding-left: 3rem;
+}
+.table-custom {
+	margin: 2rem;
+}
+.button-section {
+	text-align: center;
 }
