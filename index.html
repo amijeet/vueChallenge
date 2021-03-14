@@ -18,31 +18,21 @@
 	</head>
 	<body>
 		<!-- navbar section -->
-		<nav class="navbar navbar-light bg-dark justify-content-between">
-			<a class="navbar-brand text-light logo">Crypto</a>
-			<form class="form-inline logo">
-				<input
-					class="form-control mr-sm-2"
-					type="search"
-					placeholder="Search"
-					aria-label="Search"
-				/>
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-					Search
-				</button>
-			</form>
-		</nav>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+				<a class="navbar-brand text-light brand-custom" href="#">Crypto</a>
+			</nav>
+		</div>
 
 		<!-- table section -->
-		<table class="table table-bordered table-custom">
+		<table class="table table-bordered table-custom table-custom">
 			<thead>
 				<tr>
-					<th scope="col">UUID</th>
-					<th scope="col">Price</th>
-					<th scope="col">Rank</th>
-					<th scope="col">Tier</th>
+					<th scope="col">Icon</th>
 					<th scope="col">Name</th>
 					<th scope="col">Symbol</th>
+					<th scope="col">Price</th>
+					<th scope="col">Price change</th>
 				</tr>
 			</thead>
 			<tbody id="data"></tbody>

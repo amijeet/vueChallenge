@@ -23,12 +23,11 @@ fetch(`${proxyURL}${baseURL}`, {
 
 				coinsData.forEach((coin) => {
 					cryptoCoins += "<tr>";
-					cryptoCoins += `<td> ${coin.uuid} </td>`;
-					cryptoCoins += `<td> ${coin.price} </td>`;
-					cryptoCoins += `<td> ${coin.rank} </td>`;
-					cryptoCoins += `<td> ${coin.tier} </td>`;
+					cryptoCoins += `<td> <img src="${coin.iconUrl}" width="20px"> </td>`;
 					cryptoCoins += `<td> ${coin.name} </td>`;
 					cryptoCoins += `<td> ${coin.symbol} </td>`;
+					cryptoCoins += `<td> $ ${Math.round(coin.price)} </td>`;
+					cryptoCoins += `<td> ${coin.change} </td>`;
 					("</tr>");
 				});
 				document.getElementById("data").innerHTML = cryptoCoins;
